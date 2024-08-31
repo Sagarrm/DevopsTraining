@@ -19,7 +19,7 @@ pipeline
 					steps
 					{
 							echo 'executing mvn clean'
-							sh 'maven clean'
+							sh 'mvn clean'
 					}
 			}
 			stage('Install Stage')
@@ -27,7 +27,7 @@ pipeline
 					steps
 					{
 							echo 'executing mvn install'
-							sh 'maven install'
+							sh 'mvn install'
 					}
 			}
 	}
